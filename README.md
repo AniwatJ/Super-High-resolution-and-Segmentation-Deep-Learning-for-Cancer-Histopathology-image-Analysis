@@ -10,6 +10,17 @@ In this work, we propose a convolution neural network based on super resolution 
 
 
 ![image](https://user-images.githubusercontent.com/83015448/115782089-4184c780-a389-11eb-85c6-5437c4d13272.png)
+Figure 1: Workflow of super high resolution and segmentation deep learning. (a) fresh tissue, (b) the corresponding H&E stained tissue slide, (c) commercial microscope for capturing the H&E stained tissue slide images, (d) high-resolution image acquired by the microscope, (e) simulated low resolution images, (f) SRGAN network, (g) unseen low resolution image, (h) Generator model from SRGAN, (i) generated high-resolution image, (j) U-net model for segmentation, (k) segmented H&E image
+
+
+Figure1 shows the works flow of this work. First, we prepared the breast tumor H&E slides and used microscope to image these slides with high-magnification objective lens (40x), then we degraded the images by down sampling and adding noise. Therefore, we have corresponding ground truth (high resolution images) and low-resolution for training the Super-resolution generative adversarial network (SRGAN).  Eventually, the well-trained SRGAN model(figure1 b) is used to enhance unseen the low resolution images by generating another high resolution images. Furthermore, we take the advantages of these generated images to characterize the cell images as their resolution is substantially improved and they contain considerable detail. Particularly, some nuclei are close to each other, but they cannot resolve as the poor image quality, thus the software will segment them as a single cell. However, SRGAN can tackle this problem following by applying U-net model to the generated images (the output of SRGAN) in order to segment and quantify the cells so that we can characterize density, size, and morphology of the nuclei.  
+
+
+
+
+
+
+
 
 
 
