@@ -6,7 +6,8 @@ Pathology diagnosis is routine work performed by skill-full pathologists and exp
 In this paper, we propose a convolution neural network based on super resolution generative adversarial network (SRGAN) [reference] to enhance low resolution (LR) images. This approach can provide considerably resolution enhancement for poor quality images. To train SRGAN model, it requires data sets that consist of high-resolution images (ground truth) and their corresponding low-resolution images. We used a commercial microscope (Nikon -xxx ) to prepare dataset SRGAN training. Peak Signal to Noise Ratio (PSNR) and Structural image similarity method (SSIM) of our model are 25.389 dB and 0.899, respectively. This is promising results as it is close to the evaluation of SRGAN works [ reference] that they heavily did experiment using this architecture with the extremely huge data bases of general images. Furthermore, we also apply U-net model, which is the convolutional network architecture, for image segmentation and it is widely used for biomedical image segmentation[reference]. To train the U-net model, we need to H&E images and their binary mask for nuclei area. It is time consuming for the preparation of this dataset, thus we used dataset from the cancer imaging archive (https://doi.org/10.7937/tcia.2019.4a4dkp9u) to train our U-net model.  The accuracy of the segmentation model is approximately 83%. 
 
 
-![image](https://user-images.githubusercontent.com/83015448/115782021-2ca83400-a389-11eb-8d76-5464e9dde714.png)
+
+![image](https://user-images.githubusercontent.com/83015448/115782089-4184c780-a389-11eb-85c6-5437c4d13272.png)
 
 
 
