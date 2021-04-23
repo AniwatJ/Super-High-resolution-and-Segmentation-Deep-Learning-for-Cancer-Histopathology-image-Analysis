@@ -30,7 +30,7 @@ The ultimate goal of SRGAN is to have the well-trained Generator model to recons
  
 
 ## Usage
-
+   - The main training script is placed in /training/U-net
 
 
 
