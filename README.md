@@ -84,13 +84,13 @@ The conventional CNNs for image segmentation task has two main components, which
 
 ## Result 
 
-The ultimate goal of SRGAN is to have the well-trained Generator model to reconstruct high resolution images. In terms of particle, we cannot feed the large image to generator model due to the computation restriction. Therefore, the large images are divided into serval small images. These images need to have the overlapping area in order to stitch them back to get the same field of view (FOV) as the original large image.   Figure 2 shows the result of SRGAN. First, three low resolution images (figure2 (a)) were enhanced resolution and quality by Generator model (figure2(b)). The figure 2 (c) shows generated high-resolution images which are the output of the generator model. The stitching software was applied to these generated images and provided the larger FOV (figure 2 (e)).  The figure 2 (f) illustrates the stitch images from nine generated images. Because of the impressive quality of generated images from our generator model, we take advantages of them to characterize the nuclei using segmentation. U-net model (figure 2(g)) is applied to the generated image and the result is shown in figure 2(h).
+The ultimate goal of SRGAN is to have the well-trained Generator model to reconstruct high resolution images. In terms of particle, we cannot feed the large image to generator model due to the computation restriction. Therefore, the large images are divided into serval small images. These images need to have the overlapping area in order to stitch them back to get the same field of view (FOV) as the original large image.   Figure 4 shows the result of SRGAN. First, three low resolution images (figure4 (a)) were enhanced resolution and quality by Generator model (figure4(b)). The figure 4 (c) shows generated high-resolution images which are the output of the generator model. The stitching software was applied to these generated images and provided the larger FOV (figure 4 (e)).  The figure 4 (f) illustrates the stitch images from nine generated images. Because of the impressive quality of generated images from our generator model, we take advantages of them to characterize the nuclei using segmentation. U-net model (figure 4(g)) is applied to the generated image and the result is shown in figure 4(h).
 
 
 
  ![image](https://user-images.githubusercontent.com/83015448/115810775-86762180-a3bc-11eb-9efd-8fbed44575b0.png)
 
- 
+ Figure 4: Result of the generator model and U-net model. (a) the low-resolution H&E stained breast cancer histopathology images, (b) the well-trained generator model from SRGAN training, (c) the generated high-resolution images, (d) stitching software, (e) stitched images from 3 generated images with 40% overlapping area, (f) stitched images from 9 generated images with 40% overlapping area, (g) U-net model, (h) segmented image. 
  
  
 
