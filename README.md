@@ -36,6 +36,7 @@ The ultimate goal of SRGAN is to have the well-trained Generator model to recons
   * The training script for U-net is placed in /training/U-net/Unet_train.py
    
    * The final implementration script for Super resoltuion enhancement, segmenation, and stitiching is placed in /Implementation/Final_implementation.py
+   (This implementation requires two models, which are generator.h5 and Unet.h5)
 
 
 
