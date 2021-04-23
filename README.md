@@ -49,7 +49,7 @@ The conventional CNNs for image segmentation task has two main components, which
 
 ![image](https://user-images.githubusercontent.com/83015448/115818942-de685480-a3cb-11eb-9811-71268c547e71.png)
 
-**Figure 5 ** U-net architecture for H&E images segmentation.  Every single blue box corresponds to a multi-channel feature map. The value over the boxes represents the number of channels. The value at the lower left edge of each box is the x-y size. The white boxes denote copied feature maps. The arrows indicate the different operations.
+**Figure 5** U-net architecture for H&E images segmentation.  Every single blue box corresponds to a multi-channel feature map. The value over the boxes represents the number of channels. The value at the lower left edge of each box is the x-y size. The white boxes denote copied feature maps. The arrows indicate the different operations.
  
  
   
