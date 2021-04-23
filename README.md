@@ -28,15 +28,13 @@ Figure1 shows the works flow of this work. First, we prepared the breast tumor H
 The purpose for Super-resolution GAN (SRGAN) is to synthesize or generate super-resolution images from low-resolutions images, with more meticulous detail.  SRGAN consists of a generator model (Figure 2(a)) and discriminator model(Figure2(b)). The generator model takes a low-resolution image as the input and generates a high-resolution image after the convolution, residual, and upsampling layers. The discriminator is used to distinguish the generated image from the ground-truth image by taking them as the input and providing probability as the output.   The goal of SRGAN is to train the generator model to synthesize the image that can fool the discriminator model completely. To achieve this, we need to use the number of images as the data set to train to model as well as fine tune the hyper parameters thoroughly.   To train SRGAN, we started training the generator model first by freezing the generator model. Next step, we used adversarial network to train the generator model. The adversarial network (Figure 2(c)) is the combined models which are the generator model, discriminator model and VGG19. The VGG 19 is used as the features extractor.
 
 
- ![image](https://user-images.githubusercontent.com/83015448/115818704-52562d00-a3cb-11eb-872b-44ebd169fdf8.png)
 
-       (a)
- ![image](https://user-images.githubusercontent.com/83015448/115818737-669a2a00-a3cb-11eb-89c6-099dc76abd59.png)
 
-       (b)
  
- ![image](https://user-images.githubusercontent.com/83015448/115818797-892c4300-a3cb-11eb-8a1b-2339ae2b0f7f.png)
-          (c)
+ ![image](https://user-images.githubusercontent.com/83015448/115819319-9ac21a80-a3cc-11eb-9104-9ae5c22f232b.png)
+
+ 
+ 
  
  **Figure 2**   Super resolution generative adversarial network (SRGAN). (a) Generator model, (b) Discriminator model, (c) The combined models so-called adversarial model for training Generator model. 
 
