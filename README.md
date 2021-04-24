@@ -91,6 +91,28 @@ The ultimate goal of SRGAN is to have the well-trained Generator model to recons
  ![image](https://user-images.githubusercontent.com/83015448/115810775-86762180-a3bc-11eb-9efd-8fbed44575b0.png)
 
  Figure 4: Result of the generator model and U-net model. (a) the low-resolution H&E stained breast cancer histopathology images, (b) the well-trained generator model from SRGAN training, (c) the generated high-resolution images, (d) stitching software, (e) stitched images from 3 generated images with 40% overlapping area, (f) stitched images from 9 generated images with 40% overlapping area, (g) U-net model, (h) segmented image. 
+
+
+
+
+![image](https://user-images.githubusercontent.com/83015448/115971448-838f4400-a516-11eb-97c5-541748187224.png)
+
+Figure 5 The final result of the generator model and U-net model for the larger FOV image. (a) low resoltuion image, (b) enhanced image from generator model, (c) segmented image of (b). 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 
