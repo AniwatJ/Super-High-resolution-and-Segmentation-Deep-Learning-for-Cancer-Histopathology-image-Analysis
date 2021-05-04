@@ -94,25 +94,6 @@ The ultimate goal of SRGAN is to have the well-trained Generator model to recons
 
 
 
-
-![image](https://user-images.githubusercontent.com/83015448/115971448-838f4400-a516-11eb-97c5-541748187224.png)
-
-Figure 5 The final result of the generator model and U-net model for the larger FOV image. (a) low resoltuion image, (b) enhanced image, which is the result of the generator model, (c) segmented image, which is the result of the U-net model. 
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
 
